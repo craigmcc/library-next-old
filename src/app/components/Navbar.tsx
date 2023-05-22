@@ -1,7 +1,7 @@
 // components/Navbar.tsx
 
 /**
- * Navigation bar for the library-next application.
+ * Navigation bar for the library-next application.  (Second crack)
  *
  * @packageDocumentation
  */
@@ -17,33 +17,34 @@ import Link from "next/link";
 
 export default function Navbar() {
     return (
-        <nav className="bg-slate-600 p-4 sticky top-0 drop-shadow-xl z-10">
-            <div className="prose prose-xl mx-auto flex justify-between flex-col sm:flex-row">
-                <div className="text-3xl font-bold text-white grid place-content-center mb-2 md:mb-0">
-                    <Link href="/" className="text-white/90 no-underline hover:text-white">
-                        <span><Image
+        <nav
+            className="relative flex w-full flex-wrap items-center justify-between bg-indigo-100 py-2 text-neutral-500 shadow-lg hover:text-neutral-700 focus:text-neutral-700 dark:bg-neutral-600 lg:py-4">
+            <div className="flex w-full flex-wrap items-center justify-between px-3">
+                <div>
+                    <Link href="/" className="my-1 mr-2 flex items-center text-neutral-900">
+                        <Image
                             alt="Books Image"
                             height={75}
                             src="/books.jpeg"
                             width={50}
-                        /></span>
-                        {/*<span>Library Next</span>*/}
+                        />
+                        <span className="ml-2 font-medium dark:text-neutral-200">Library Next</span>
                     </Link>
                 </div>
-                <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-5 text-white text-2xl lg:text-2xl">
-                    <Link href="/libraries" className="text-white/80 hover:text-white">
+                <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-5 font-medium text-white">
+                    <Link href="/libraries" className="text-gray-500 hover:text-indigo-800">
                         Libraries
                     </Link>
-                    <Link href="/authors" className="text-white/80 hover:text-white">
+                    <Link href="/authors" className="text-gray-500 hover:text-indigo-800">
                         Authors
                     </Link>
-                    <Link href="/series" className="text-white/80 hover:text-white">
+                    <Link href="/series" className="text-gray-500 hover:text-indigo-800">
                         Series
                     </Link>
-                    <Link href="/stories" className="text-white/80 hover:text-white">
+                    <Link href="/stories" className="text-gray-500 hover:text-indigo-800">
                         Stories
                     </Link>
-                    <Link href="/volumes" className="text-white/80 hover:text-white">
+                    <Link href="/volumes" className="text-gray-500 hover:text-indigo-800">
                         Volumes
                     </Link>
                 </div>

@@ -13,6 +13,7 @@ import { Inter } from 'next/font/google'
 // Internal Modules ----------------------------------------------------------
 
 import './globals.css'
+//import Navbar0 from "@/app/components/Navbar0";
 import Navbar from "@/app/components/Navbar";
 
 // Private Objects -----------------------------------------------------------
@@ -34,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+          {/*<Navbar0/>*/}
           <Navbar/>
           {children}
       </body>
