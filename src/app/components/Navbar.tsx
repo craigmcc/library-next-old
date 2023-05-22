@@ -32,19 +32,19 @@ export default function Navbar() {
                     </Link>
                 </div>
                 <div className="flex flex-row justify-center sm:justify-evenly align-middle gap-5 font-medium text-white">
-                    <Link href="/libraries" className="text-gray-500 hover:text-indigo-800">
+                    <Link href="/libraries" className="text-gray-500 hover:text-indigo-400 active:text-indigo-800">
                         Libraries
                     </Link>
-                    <Link href="/authors" className="text-gray-500 hover:text-indigo-800">
+                    <Link href="/authors" className="text-gray-500 hover:text-indigo-400 active:text-indigo-800">
                         Authors
                     </Link>
-                    <Link href="/series" className="text-gray-500 hover:text-indigo-800">
+                    <Link href="/series" className="text-gray-500 hover:text-indigo-400 active:text-indigo-800">
                         Series
                     </Link>
-                    <Link href="/stories" className="text-gray-500 hover:text-indigo-800">
+                    <Link href="/stories" className="text-gray-500 hover:text-indigo-400 active:text-indigo-800">
                         Stories
                     </Link>
-                    <Link href="/volumes" className="text-gray-500 hover:text-indigo-800">
+                    <Link href="/volumes" className="text-gray-500 hover:text-indigo-400 active:text-indigo-800">
                         Volumes
                     </Link>
                 </div>
