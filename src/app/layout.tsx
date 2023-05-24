@@ -15,10 +15,19 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 //import Navbar0 from "@/app/components/Navbar0";
 import Navbar from "@/app/components/Navbar";
+//import dbclient from "@/app/server/dbclient";
 
 // Private Objects -----------------------------------------------------------
 
 const inter = Inter({ subsets: ['latin'] })
+
+/*
+console.log("Awaiting Client");
+dbclient()
+    .then((client) => {
+        console.log("Got client");
+    });
+*/
 
 // Public Objects ------------------------------------------------------------
 
